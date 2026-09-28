@@ -1,6 +1,7 @@
 import React from 'react'
 import {Bookmark} from 'lucide-react'
-const Card = () => {
+const Card = (props) => {
+    
     return (
         <>
             <div className='parent'>
@@ -8,24 +9,25 @@ const Card = () => {
                 <div className='card'>
 
                     <div className="top">
-                        <img src="https://i.pinimg.com/736x/36/ff/72/36ff72fc8d310f1353ecb2e5862296ab.jpg" alt="" />
+                        <img src={props.logo} alt="" />
                         <button type="button">Save <Bookmark size={12} /> </button>
                     </div>
 
                     <div className="center">
-                        <h3>Amazon <span>5 days ago</span></h3>
-                        <h2>Senior UI/UX Designer</h2>
+                        <h3>{props.company} <span>{props.datePost}</span></h3>
+                        <h2>{props.post}</h2>
                         <div className='blocks'>
-                            <span>Part-Time</span>
-                            <span>Senior Level</span>
+                            <span>{props.tag1}</span>
+                            <span>{props.tag2}</span>
+                            <span>{props.level}</span>
                         </div>
                         <hr />
                     </div>
 
                     <div className="bottom">
                         <div className='Payment'>
-                            <h3>$120/hr</h3>
-                            <p>Mumbai, India</p>
+                            <h3>{props.pay}</h3>
+                            <p>{props.location}</p>
                         </div>
                         <button>Apply Now</button>
                     </div>
