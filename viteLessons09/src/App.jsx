@@ -17,7 +17,6 @@ const App = () => {
   // }
 
 
-
   //Second jsx code 
   // function UserName(val){
   //     console.log(val);  
