@@ -6,7 +6,7 @@ const Section1 = (props) => {
   //console.log(props.users);
   return (
     <div className='h-screen w-full'>
-      <Navbar/>
+      <Navbar tag='TARGET AUIDENCE'/>
       <Page1Content users={props.users}/>
     </div>
   )
