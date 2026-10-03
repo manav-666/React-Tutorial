@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+
+.DownloadBtn:hover{
+    border: 2px solid black;
+    
+}
