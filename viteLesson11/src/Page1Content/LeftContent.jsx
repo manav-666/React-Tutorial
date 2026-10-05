@@ -14,7 +14,7 @@ const LeftContent = () => {
         <button className='bg-blue-500 text-white p-3 rounded-md font-semibold'>View My Project</button>
         <button className='DownloadBtn flex gap-3 p-3 rounded-md font-semibold border text-white'><Download color='blue'/><span className='text-blue-600 '>Download Resume</span></button>
       </div>
-      <div className='flex gap-5'>
+      <div className='flex gap-5 pt-5'>
         <button className='p-0.5 rounded-sm'><RiGithubFill color='black' size={22}/></button>
         <button className='text-blue bg-blue-700 te p-0.5 rounded-sm'><RiLinkedinFill size={20} color='white' size={20} /></button>
         <button className='text-white bg-blue-700 rounded-sm p-0.5'><RiMailFill color='white' size={20}/></button>
