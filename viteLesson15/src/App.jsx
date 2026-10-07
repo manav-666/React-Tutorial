@@ -43,7 +43,7 @@ const App = () => {
       <button className='active:bg-red-800 bg:text-red px-7 py-2 rounded-xl m-10' onClick={getData}>Get Data</button>
       <div>
         {data.map(function(elem, idx){
-          return <div className="flex p-5">
+          return <div className="p-5">
             <div className='bg-red-300 h-20 w-40 mt-5 text-center p-3'><span className='font-bold text-white '>Author Name: </span>{elem.author}</div>
           </div>
         })}
